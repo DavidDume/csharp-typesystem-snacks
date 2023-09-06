@@ -98,15 +98,32 @@
 
 //SNACK 9
 
-int somma = 0;
+//int somma = 0;
 
-int[] arr = new int[50];
+//int[] arr = new int[50];
 
-while (somma < 50)
+//while (somma < 50)
+//{
+
+//    Console.WriteLine("aggiungi numero");
+//    int n = int.Parse(Console.ReadLine());
+//    arr[somma] = n;
+//    somma += n;
+//}
+
+
+//SNACK 10
+
+Random random = new Random();
+Console.WriteLine("Quanti array bisonga creare?");
+int nArray = int.Parse(Console.ReadLine());
+
+for(int i = 0; i < nArray; i++)
 {
-
-    Console.WriteLine("aggiungi numero");
-    int n = int.Parse(Console.ReadLine());
-    arr[somma] = n;
-    somma += n;
+    int[] arr = new int[10];
+    for(int j = 0; j < 10; j++)
+    {
+        arr[j] = random.Next(1, 100);
+    }
+    Console.WriteLine(String.Join(",", arr));
 }
