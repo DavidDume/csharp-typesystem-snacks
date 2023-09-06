@@ -60,3 +60,9 @@ if(numeroUtente % 2 == 0)
 {
     Console.WriteLine(numeroUtente+1);
 }
+
+// SNACK 6
+string[] invitati = { "giuseppe", "carlo", "paolo" };
+Console.WriteLine("Qaul'è il tuo nome?");
+string nome = Console.ReadLine();
+Console.WriteLine($"{(invitati.Contains(nome) ? "Puoi partecipare" : "Non sei sulla lista")}");
