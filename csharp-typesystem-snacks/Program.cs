@@ -53,12 +53,13 @@ Console.WriteLine($"La somma è {somma2} e la media è {media}");
 Console.WriteLine("Inserisci numero:");
 int numeroUtente = int.Parse(Console.ReadLine());
 
-if(numeroUtente % 2 == 0)
+if (numeroUtente % 2 == 0)
 {
     Console.WriteLine(numeroUtente);
-} else
+}
+else
 {
-    Console.WriteLine(numeroUtente+1);
+    Console.WriteLine(numeroUtente + 1);
 }
 
 // SNACK 6
@@ -66,3 +67,17 @@ string[] invitati = { "giuseppe", "carlo", "paolo" };
 Console.WriteLine("Qaul'è il tuo nome?");
 string nome = Console.ReadLine();
 Console.WriteLine($"{(invitati.Contains(nome) ? "Puoi partecipare" : "Non sei sulla lista")}");
+
+//SNACK 7
+
+
+int[] numeriUtente = new int[6];
+for (int i = 0; i <= 5; i++)
+{
+    int numeroUtente = int.Parse(Console.ReadLine());
+    if(i % 2 == 0)
+    {
+        numeriUtente[i] = numeroUtente;
+
+    }
+}
