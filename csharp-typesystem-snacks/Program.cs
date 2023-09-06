@@ -23,3 +23,17 @@ if(parola1.Length < parola2.Length)
 {
     Console.WriteLine($"{parola1} - {parola2}");
 }
+
+//SNACK 3
+
+int somma = 0;
+
+for(int i = 0; i < 10; i++)
+{
+    int numeroInserito = int.Parse(Console.ReadLine());
+    somma += numeroInserito;
+}
+
+Console.WriteLine(somma);
+
+//SNACK 4   
