@@ -40,12 +40,15 @@
 ////SNACK 4
 
 //int somma2 = 0;
+//int[] numeri = new int[9];
+
 //for (int i = 2; i <= 10; i++)
 //{
+//    numeri[i-2] = i;  
 //    somma2 += i;
 //}
 
-//int media = somma2 / 8;
+//float media = (float)somma2 / numeri.Length;
 //Console.WriteLine($"La somma è {somma2} e la media è {media}");
 
 ////SNACK 5
@@ -118,12 +121,14 @@ Random random = new Random();
 Console.WriteLine("Quanti array bisonga creare?");
 int nArray = int.Parse(Console.ReadLine());
 
-for(int i = 0; i < nArray; i++)
+for (int i = 0; i < nArray; i++)
 {
     int[] arr = new int[10];
-    for(int j = 0; j < 10; j++)
+    for (int j = 0; j < 10; j++)
     {
         arr[j] = random.Next(1, 100);
     }
     Console.WriteLine(String.Join(",", arr));
 }
+
+
