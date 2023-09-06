@@ -84,14 +84,29 @@
 
 //SNACK 8
 
-int[] arr = { 1,2,5,7,5,2,88,23 };
-int somma = 0;
-for (int i = 0; i < arr.Length; i++)
-{
-    if(i % 2 == 0)
-    {
-        somma += arr[i];
-    }
-}
+//int[] arr = { 1,2,5,7,5,2,88,23 };
+//int somma = 0;
+//for (int i = 0; i < arr.Length; i++)
+//{
+//    if(i % 2 == 0)
+//    {
+//        somma += arr[i];
+//    }
+//}
 
-Console.WriteLine(somma);
+//Console.WriteLine(somma);
+
+//SNACK 9
+
+int somma = 0;
+
+int[] arr = new int[50];
+
+while (somma < 50)
+{
+
+    Console.WriteLine("aggiungi numero");
+    int n = int.Parse(Console.ReadLine());
+    arr[somma] = n;
+    somma += n;
+}
