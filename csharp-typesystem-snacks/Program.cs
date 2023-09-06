@@ -40,10 +40,23 @@ Console.WriteLine(somma);
 //SNACK 4
 
 int somma2 = 0;
-for(int i = 2;i <= 10;i++)
+for (int i = 2; i <= 10; i++)
 {
     somma2 += i;
 }
 
 int media = somma2 / 8;
 Console.WriteLine($"La somma è {somma2} e la media è {media}");
+
+//SNACK 5
+
+Console.WriteLine("Inserisci numero:");
+int numeroUtente = int.Parse(Console.ReadLine());
+
+if(numeroUtente % 2 == 0)
+{
+    Console.WriteLine(numeroUtente);
+} else
+{
+    Console.WriteLine(numeroUtente+1);
+}
