@@ -16,10 +16,11 @@ string parola1 = Console.ReadLine();
 Console.WriteLine("Inserisci prima parola:");
 string parola2 = Console.ReadLine();
 
-if(parola1.Length < parola2.Length)
+if (parola1.Length < parola2.Length)
 {
     Console.WriteLine($"{parola2} - {parola1}");
-} else
+}
+else
 {
     Console.WriteLine($"{parola1} - {parola2}");
 }
@@ -28,7 +29,7 @@ if(parola1.Length < parola2.Length)
 
 int somma = 0;
 
-for(int i = 0; i < 10; i++)
+for (int i = 0; i < 10; i++)
 {
     int numeroInserito = int.Parse(Console.ReadLine());
     somma += numeroInserito;
@@ -36,4 +37,13 @@ for(int i = 0; i < 10; i++)
 
 Console.WriteLine(somma);
 
-//SNACK 4   
+//SNACK 4
+
+int somma2 = 0;
+for(int i = 2;i <= 10;i++)
+{
+    somma2 += i;
+}
+
+int media = somma2 / 8;
+Console.WriteLine($"La somma è {somma2} e la media è {media}");
